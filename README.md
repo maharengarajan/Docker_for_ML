@@ -1,6 +1,6 @@
 #Build docker image
 ```
-docker build -t <image name>
+docker build -t <image name> .
 ```
 
 #find docker images
@@ -21,4 +21,19 @@ docker ps
 #to stop running docker image
 ```
 docker stop <image id>
+```
+
+#delete the image
+```
+docker image rm -f <image name>
+```
+
+#push docker image into docker hub
+```
+docker push maharengarajan/welcome-app:latest
+```
+
+#to pull docker image
+```
+docker pull maharengarajan/welcome-app:latest
 ```
